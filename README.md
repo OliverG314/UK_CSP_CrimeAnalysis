@@ -7,6 +7,8 @@ The R code in this repository allows for the exploration of CSP crime data in th
 # Data sources
 https://www.gov.uk/government/statistical-data-sets/police-recorded-crime-and-outcomes-open-data-tables, under the "Police record crime open data, Police force area tables" section.
 
+The datasets are too large to upload to github, so must be downloaded, then the python file to combine them must be ran.
+
 # Combining and cleaning the data
 The dataset used in R is a combination of 4 datasets downloaded from the link above. The python file ```datawriter.py``` combines these 4 datasets into 1.
 
