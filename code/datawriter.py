@@ -1,5 +1,9 @@
 import pandas as pd
 
+import os
+
+os.makedirs("../data", exist_ok=True)
+
 df = pd.read_excel("../data/prc-csp-0203-to-0607-tabs.xlsx", sheet_name = "2002-03")
 
 for i in range(3, 25):
@@ -29,4 +33,5 @@ for i in range(3, 25):
         df = pd.concat([df, xl], ignore_index=True)
 
 df.to_csv("../data/finalLongData.csv", index=False)
+
 
